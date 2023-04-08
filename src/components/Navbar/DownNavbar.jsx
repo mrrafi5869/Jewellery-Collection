@@ -36,7 +36,7 @@ const DownNavbar = () => {
             </li>
             <li tabIndex={0}>
               <Link className="justify-between">
-                Parent
+                Products
                 <svg
                   className="fill-current"
                   xmlns="http://www.w3.org/2000/svg"
@@ -49,13 +49,13 @@ const DownNavbar = () => {
               </Link>
               <ul className="p-2">
                 <li>
-                  <Link>Ring</Link>
+                  <Link to="/Products/Ring">Ring</Link>
                 </li>
                 <li>
-                  <Link>Necklace</Link>
+                  <Link to="/Products/Necklace">Necklace</Link>
                 </li>
                 <li>
-                  <Link>Earings</Link>
+                  <Link to="/Products/Earings">Earings</Link>
                 </li>
               </ul>
             </li>

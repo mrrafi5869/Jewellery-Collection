@@ -6,9 +6,9 @@ const Products = () => {
     const products = useLoaderData();
     console.log(products);
     return (
-        <div className='w-1/2 mx-auto p-2'>
+        <div className='lg:w-1/2 mx-auto p-2'>
             <img src={image} className='mx-auto my-5' alt="" />
-            <div className='grid grid-cols-3 place-items-center gap-y-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-y-10'>
             {products &&
                 products.map(product => <CategoryProduct 
                     key={product.id}
