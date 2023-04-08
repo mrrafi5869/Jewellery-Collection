@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../assets/image/logo.jpg'
+import logo from '../../assets/image/logo.jpg'
 import DownNavbar from './DownNavbar';
 
 const Navbar = () => {

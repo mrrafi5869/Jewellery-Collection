@@ -1,0 +1,38 @@
+.box{
+    width: 380px;
+    height: 500px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3); 
+    background: #000;
+    background-position: top;
+    transition: ease-in-out 3s;
+    border-radius: 3px;
+}
+
+.box.box1{
+    background: url("../../../assets/image/home1.jpg");
+    background-size: cover;
+}
+.box.box2{
+    background: url("../../../assets/image/home2.jpg");
+    background-size: cover;
+}
+.box.box3{
+    background: url("../../../assets/image/home3.jpg");
+    background-size: cover;
+}
+.box.box4{
+    background: url("../../../assets/image/home4.jpg");
+    background-size: cover;
+}
+.box.box5{
+    background: url("../../../assets/image/home5.jpg");
+    background-size: cover;
+}
+.box.box6{
+    background: url("../../../assets/image/home6.jpg");
+    background-size: cover;
+}
+
+.box:hover{
+    background-position: bottom;
+}

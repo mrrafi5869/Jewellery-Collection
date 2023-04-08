@@ -26,13 +26,13 @@ const DownNavbar = () => {
             className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link>Home</Link>
+              <Link to='/home'>Home</Link>
             </li>
             <li>
-              <Link>Booking</Link>
+              <Link to='/booked'>Booked</Link>
             </li>
             <li>
-              <Link>About Us</Link>
+              <Link to='/about'>About Us</Link>
             </li>
             <li tabIndex={0}>
               <Link className="justify-between">
@@ -49,15 +49,15 @@ const DownNavbar = () => {
               </Link>
               <ul className="p-2">
                 <li>
-                  <Link>Submenu 1</Link>
+                  <Link>Ring</Link>
                 </li>
                 <li>
-                  <Link>Submenu 2</Link>
+                  <Link>Necklace</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link>Contact Us</Link>
+              <Link to='/contact'>Contact Us</Link>
             </li>
           </ul>
         </div>
@@ -67,10 +67,10 @@ const DownNavbar = () => {
             <Link className="hover:text-gray-400 bg-transparent mr-10" to="/home">Home</Link>
           </li>
           <li>
-            <Link className="hover:text-gray-400 bg-transparent mr-10" to="/booking">Booking</Link>
+            <Link className="hover:text-gray-400 bg-transparent mr-10" to="/booked">Booked</Link>
           </li>
           <li>
-            <Link className="hover:text-gray-400 bg-transparent mr-10" to="about">About Us</Link>
+            <Link className="hover:text-gray-400 bg-transparent mr-10" to="/about">About Us</Link>
           </li>
           <li tabIndex={0}>
             <Link className="hover:text-gray-400 bg-transparent mr-8">
