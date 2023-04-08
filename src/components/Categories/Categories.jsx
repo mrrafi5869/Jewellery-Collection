@@ -3,9 +3,10 @@ import {  IoIosArrowRoundForward  } from 'react-icons/io';
 import {  BsPlus  } from 'react-icons/bs';
 import about from '../../assets/image/about-us.jpg'
 import LeftBanner from '../../assets/image/left-banner.jpg'
+import Blog from "../Blog/Blog";
 const Categories = () => {
   return (
-    <section className="w-1/2 mx-auto flex justify-between">
+    <section className="w-9/12 mx-auto flex justify-around">
       <div>
         <h4 className="text-xl">Categories</h4>
         <div className="bg-white w-56 shadow-md shadow-gray-300 border border-gray-300 rounded-md mt-2 mr-8 p-2">
@@ -70,7 +71,9 @@ const Categories = () => {
             </div>
             <img src={about} alt="" />
         </div>
-        <div></div>
+        <div>
+            <Blog></Blog>
+        </div>
         <div></div>
       </div>
     </section>
