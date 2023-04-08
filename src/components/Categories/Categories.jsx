@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {  IoIosArrowRoundForward  } from 'react-icons/io';
 import {  BsPlus  } from 'react-icons/bs';
 import about from '../../assets/image/about-us.jpg'
 import LeftBanner from '../../assets/image/left-banner.jpg'
-import Blog from "../Blog/Blog";
+import Products from "../Products/Products";
+import CategoryProduct from "../Products/CategoryProduct";
 const Categories = () => {
+    const [products, setProducts] = useState([]);
+    useEffect(() => {
+        fetch("http://localhost:5000/products")
+        .then(res => res.json())
+        .then(data => {
+            const limitedData = data.slice(0, 9);
+            setProducts(limitedData);
+        })
+    } , [products]);
   return (
-    <section className="w-9/12 mx-auto flex justify-around">
+    <section className="w-3/5 mx-auto flex justify-around">
       <div>
         <h4 className="text-xl">Categories</h4>
         <div className="bg-white w-56 shadow-md shadow-gray-300 border border-gray-300 rounded-md mt-2 mr-8 p-2">
@@ -64,17 +74,21 @@ const Categories = () => {
       </div>
       
       <div>
-        <div className="flex">
+        <div className="flex mb-6">
             <div>
                 <h3 className="text-xl font-semibold">About Jewellery Store</h3>
-                <p className="mr-8 text-gray-400">Lorem ipsum presta shop amet Lorem ipsum dolor sit amet,<br /> consectetur adipisicing elit, sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua</p>
+                <p className="w-96 mr-8 text-gray-400">Welcome to XYZ Jewelry, where every piece of jewelry is handcrafted with love and care to bring out the inner radiance in you. As a family-owned business with a passion for exquisite jewelry, we take pride in our unique designs and exceptional craftsmanship. </p>
             </div>
             <img src={about} alt="" />
         </div>
         <div>
-            <Blog></Blog>
+            <h3 className="text-xl font-semibold">Products</h3>
+            <div className="grid grid-cols-3 gap-2">
+            {
+                products.map(product => <CategoryProduct key={product.id} product={product}></CategoryProduct>)
+            }
+            </div>
         </div>
-        <div></div>
       </div>
     </section>
   );

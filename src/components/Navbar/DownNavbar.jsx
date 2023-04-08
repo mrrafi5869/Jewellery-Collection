@@ -54,6 +54,9 @@ const DownNavbar = () => {
                 <li>
                   <Link>Necklace</Link>
                 </li>
+                <li>
+                  <Link>Earings</Link>
+                </li>
               </ul>
             </li>
             <li>
@@ -73,7 +76,7 @@ const DownNavbar = () => {
             <Link className="hover:text-gray-400 bg-transparent mr-10" to="/about">About Us</Link>
           </li>
           <li tabIndex={0}>
-            <Link className="hover:text-gray-400 bg-transparent mr-8">
+            <a className="hover:text-gray-400 bg-transparent mr-8">
               Products
               <svg
                 className="fill-current"
@@ -84,13 +87,16 @@ const DownNavbar = () => {
               >
                 <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
               </svg>
-            </Link>
-            <ul className="p-2">
+            </a>
+            <ul className="p-2 bg-white">
               <li>
-                <Link className="hover:text-gray-400 bg-transparent" to="/ring">Ring</Link>
+                <Link className="hover:text-gray-400 bg-transparent" to="/Products/Ring">Ring</Link>
               </li>
               <li>
-                <Link className="hover:text-gray-400 bg-transparent" to="/necklace">Necklace</Link>
+                <Link className="hover:text-gray-400 bg-transparent" to="/Products/Necklace">Necklace</Link>
+              </li>
+              <li>
+                <Link className="hover:text-gray-400 bg-transparent" to="/Products/Earings">Earings</Link>
               </li>
             </ul>
           </li>
