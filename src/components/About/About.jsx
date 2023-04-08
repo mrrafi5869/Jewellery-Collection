@@ -17,7 +17,7 @@ import { Autoplay, EffectCube, Pagination, Navigation } from "swiper";
 const About = () => {
   return (
     <section className="flex flex-col lg:flex-row lg:justify-between items-center py-20 px-[12%]">
-      <div class="about-left">
+      <div class="about-left mb-10 lg:mb-0">
         <Swiper
           effect={"cube"}
           grabCursor={true}
@@ -46,8 +46,8 @@ const About = () => {
         </Swiper>
       </div>
 
-      <div class="about-right w-[54%]">
-        <h1 className="text-yellow-300 text-4xl mb-1">About Us</h1>
+      <div class="about-right lg:w-[54%]">
+        <h1 className="text-yellow-300 text-4xl mb-4 text-center lg:text-left">About Us</h1>
         <p className="overflow-y-scroll h-56">
           Welcome to XYZ Jewelry, where every piece of jewelry is handcrafted
           with love and care to bring out the inner radiance in you. As a

@@ -19,11 +19,11 @@ const Contact = () => {
         });
     };
     return (
-        <div className='w-9/12 mx-auto mt-8'>
+        <div className='lg:w-9/12 mx-auto mt-8'>
             <div className='grid lg:grid-cols-2 gap-3'>
                 <div className='contact-head'>
-                <h1 className='text-yellow-400 text-3xl font-semibold my-2 uppercase'>Let's get in touch</h1>
-                <p className='text-lg font-semibold'>Contact us to buy jewelry or if you have any questions.</p>
+                <h1 className='text-yellow-400 text-xl lg:text-3xl font-semibold my-2 uppercase'>Let's get in touch</h1>
+                <p className='lg:text-lg font-semibold'>Contact us to buy jewelry or if you have any questions.</p>
                 <div className='my-3'>
                     <div className='flex items-center mb-2'>
                         <GrLocation className='text-2xl mr-4'></GrLocation>
@@ -44,7 +44,7 @@ const Contact = () => {
                 </div>
                 
                 <div className='contact-head'>
-                    <h1 className='text-yellow-400 text-3xl font-semibold my-2'>CONTACT WITH ME</h1>
+                    <h1 className='text-yellow-400 text-lg lg:text-3xl font-semibold my-2'>CONTACT WITH ME</h1>
                     <form ref={form} onSubmit={sendEmail}>
                     <div className='grid grid-cols-1 lg:grid-cols-2 gap-1 mb-1 lg:mb-3'>
                         <input type="name" name='first_name' placeholder="Your Name" className="input input-bordered w-full" />

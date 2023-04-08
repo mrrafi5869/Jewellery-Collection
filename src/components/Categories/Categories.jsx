@@ -13,7 +13,7 @@ const Categories = () => {
         })
     } , [products]);
   return (
-    <section className="lg:w-3/5 mx-auto flex flex-col lg:flex-row lg:justify-around">
+    <section className="md:w-3/5 mx-auto flex flex-col lg:flex-row lg:justify-around">
         <CategoriesName></CategoriesName>      
       <div>
         <div className="flex flex-col md:flex-row justify-center text-justify mb-6">
