@@ -28,7 +28,7 @@ const Slider = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div>
+          <div className="hidden lg:block">
             <h1 className="text-3xl mb-5">
               PLATINUM GOLD <br /> JEWELLERY
             </h1>
@@ -42,7 +42,7 @@ const Slider = () => {
           <img src={slider1} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <div>
+          <div className="hidden lg:block">
             <h1 className="text-3xl mb-5">
               DIAMOND SILVER <br /> JEWELLERY
             </h1>
@@ -56,7 +56,7 @@ const Slider = () => {
           <img src={slider2} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <div>
+          <div className="hidden lg:block">
             <h1 className="text-3xl mb-5">
               WHITE GOLD <br /> JEWELLERY
             </h1>
