@@ -29,7 +29,7 @@ const DownNavbar = () => {
               <Link to='/home'>Home</Link>
             </li>
             <li>
-              <Link to='/booked'>Booked</Link>
+              <Link to='/booked'>Booking</Link>
             </li>
             <li>
               <Link to='/about'>About Us</Link>
@@ -70,7 +70,7 @@ const DownNavbar = () => {
             <Link className="hover:text-gray-400 bg-transparent mr-10" to="/home">Home</Link>
           </li>
           <li>
-            <Link className="hover:text-gray-400 bg-transparent mr-10" to="/booked">Booked</Link>
+            <Link className="hover:text-gray-400 bg-transparent mr-10" to="/booked">Booking</Link>
           </li>
           <li>
             <Link className="hover:text-gray-400 bg-transparent mr-10" to="/about">About Us</Link>

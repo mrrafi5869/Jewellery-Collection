@@ -1,10 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../components/Home/Home/Home";
-import Booked from "../components/Booked/Booked";
 import About from "../components/About/About";
 import Contact from "../components/Contact/Contact";
 import Products from "../components/Products/Products";
+import Booking from "../components/Booking/Booking";
 
 const routes = createBrowserRouter([
     {
@@ -21,7 +21,7 @@ const routes = createBrowserRouter([
             },
             {
                 path: '/booked',
-                element: <Booked></Booked>
+                element: <Booking></Booking>
             },
             {
                 path: '/about',
@@ -34,7 +34,7 @@ const routes = createBrowserRouter([
             {
                 path: '/products/:id',
                 element: <Products></Products>,
-                loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+                loader: ({params}) => fetch(`https://jewellery-collections-server.vercel.app/products/${params.id}`)
             },
         ]
     }

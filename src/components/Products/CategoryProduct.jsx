@@ -1,34 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CategoryProduct.css";
 const CategoryProduct = ({ product }) => {
   const { img, name, price } = product;
-  const [booked, setBooked] = useState([]);
-
-  const handleBook = (singleProduct) => {
-  //   setBooked([...booked, singleProduct]);
-  //   let p = {};
-  //   const storedProduct = localStorage.getItem("products");
-  //   if (storedProduct) {
-  //     p = JSON.parse(storedProduct);
-  //   }
-  //   console.log(p);
-  //   saveItemToLocalStorage()
-  //   localStorage.setItem(name, price);
-  // };
-
-  // const getProductFromLocalStorage = () => {
-  //   let savedProduct =  localStorage.getItem('products');
-  //   let product = {};
-  //   if(savedProduct){
-  //     product = JSON.parse(savedProduct)
-  //   }
-  //   return product;
-  // }
-
-  // const saveItemToLocalStorage = (p, quantity) => {
-  //     const productStringified = JSON.stringify(product);
-  //     localStorage.setItem('products', productStringified)
-  }
 
   return (
     <div className="w-52 h-[345px] bg-white text-center border border-gray-400 rounded-md card">
@@ -66,7 +39,6 @@ const CategoryProduct = ({ product }) => {
       </p>
       <button
         className="btn btn-sm info hover:bg-yellow-400 rounded-b-md rounded-t-none"
-        onClick={() => handleBook(product)}
       >
         Add Now
       </button>

@@ -5,7 +5,7 @@ import CategoriesName from "./CategoriesName";
 const Categories = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch("http://localhost:5000/products")
+        fetch("https://jewellery-collections-server.vercel.app/products")
         .then(res => res.json())
         .then(data => {
             const limitedData = data.slice(0, 9);
